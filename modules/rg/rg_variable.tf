@@ -1,19 +1,19 @@
 variable "rg_name" {
   description = "Name of Resource group"  
   type        = string
-  default     = "guru1427_rg"
+  default     = ""
 }
 variable "location" {
   description = "location where the Resource will be created"
   type        = string
-  default     = "uksouth"
+  default     = ""
 }
 variable "tags" {
   description = "tags for the resources"
   type        = map(string)
   default = {
-    "envirinment" = "dev"
-    "source"      = "terraform"
-    "purpose"     = "testing"
+    "env"="dev"
+    "source"="terraform"
+    "purpose"="testing"
   }
 }
