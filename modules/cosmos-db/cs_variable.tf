@@ -8,6 +8,23 @@ variable "location" {
   default     = "uksouth"
 }
 
+variable "cosmos_db_name" {
+    type = string
+    description = "name of the cosmos_db"
+    default = "uksouth"
+}
+
+variable "secret_name" {
+    type = string
+    description = "name of the secret"
+    default = "uksouth"
+  }
+
+variable "secret_value" {
+    type = string
+    description = "name of the secret value"
+  }
+
 variable "tags" {
   description = "A mapping of tags which should be assigned to the resource group"
   default = {
@@ -34,8 +51,5 @@ variable "fun_name" {
 }
 
 variable "storage_account_access_key" {
-  default = "guru-functiom-1427"
-}
-variable "keyvault_name" {
-  default = "gurumama11441427"
+  default = "guru-function-1427"
 }
